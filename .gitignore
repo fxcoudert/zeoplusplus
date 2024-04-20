@@ -1,0 +1,5 @@
+*.o
+libzeo++.so
+framework_builder
+molecule_to_abstract
+network
