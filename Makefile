@@ -135,7 +135,7 @@ statlib: ${STATIC_LIB}
 ${STATIC_LIB}: ${STATIC_OBJS}
 	@echo
 	@echo Linking $@
-	ar rs $@ $^ #$(VOROINCLDIR) $(VOROLINKDIR) $(LIB)
+	$(AR) rs $@ $^ #$(VOROINCLDIR) $(VOROLINKDIR) $(LIB)
 
 dylib: CFLAGS += -fPIC 
 dylib: ${DY_LIB}
