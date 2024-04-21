@@ -12,7 +12,7 @@
 #On a slower computer, it may be worth lowering the level of optimization to
 #"-O2" or switching it off completely, to speed up the compilation. See
 #config.hh for more details.
-CC=g++
+CXX=g++
 CFLAGS=-Wall -ansi -pedantic -O3
 
 #These optional compiler flags for the GNU C++ compiler force more function
