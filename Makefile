@@ -149,7 +149,7 @@ ${DY_LIB}: ${DY_OBJS}
 	$(CXX) $(VOROINCLDIR) $(CFLAGS) -c $<
 
 clean: 
-	rm -f $(TOT_OBJS) *.err $(EXECUTABLES)
+	rm -f $(TOT_OBJS) *.err $(EXECUTABLES) $(STATIC_LIB) $(DY_LIB)
 
 .PHONY: all clean depend
 
