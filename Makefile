@@ -5,7 +5,7 @@
 CXX = g++
 
 #Flags to compile with
-CFLAGS = -g #-fPIC
+CFLAGS = -O3
 CFLAGS_DYLIB = -fPIC
 
 UNAME_S := $(shell uname -s)
@@ -135,7 +135,7 @@ statlib: ${STATIC_LIB}
 ${STATIC_LIB}: ${STATIC_OBJS}
 	@echo
 	@echo Linking $@
-	$(AR) rs $@ $^ #$(VOROINCLDIR) $(VOROLINKDIR) $(LIB)
+	$(AR) rs $@ $^
 
 dylib: CFLAGS += -fPIC 
 dylib: ${DY_LIB}
